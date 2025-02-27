@@ -29,7 +29,7 @@ def get_todos():
 def get_todo(id):
     return jsonify(
         {
-            "id": 1,
+            "id": id,
             "title": "Watch CSSE6400 Lecture",
             "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
             "completed": True,
@@ -45,13 +45,13 @@ def create_todo():
     return (
         jsonify(
             {
-                "id": 2,
-                "title": "Watch CSSE6400 Lecture 2",
-                "description": "Watch the lecture on Blackboard",
-                "completed": False,
-                "deadline_at": "2025-03-07T00:00:00Z",
-                "created_at": "2025-02-01T00:00:00Z",
-                "updated_at": "2025-02-01T00:00:00Z",
+                "id": 1,
+                "title": "Watch CSSE6400 Lecture",
+                "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+                "completed": True,
+                "deadline_at": "2023-02-27T00:00:00",
+                "created_at": "2023-02-20T00:00:00",
+                "updated_at": "2023-02-20T00:00:00",
             }
         ),
         201,
@@ -79,10 +79,10 @@ def delete_todo(id):
         {
             "id": id,
             "title": "Watch CSSE6400 Lecture",
-            "description": "Watch the lecture on Blackboard",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
             "completed": True,
-            "deadline_at": "2025-03-01T00:00:00Z",
-            "created_at": "2025-02-01T00:00:00Z",
-            "updated_at": "2025-02-01T00:00:00Z",
+            "deadline_at": "2023-02-27T00:00:00",
+            "created_at": "2023-02-20T00:00:00",
+            "updated_at": "2023-02-20T00:00:00",
         }
     )
